@@ -26,6 +26,13 @@ body {
     overflow: hidden;
 }
 
+.neco-top-bar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+}
+
 #jp-text {
     font-family: Hina-Mincho-Regular;
 }
@@ -116,4 +123,10 @@ footer {
     color: #fff;
     text-align: center;
     width: 100%;
+}
+
+@media (min-width: 990px) {
+    .neco-top-bar {
+        flex-direction: row-reverse;
+    }
 }
