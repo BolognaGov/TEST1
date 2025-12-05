@@ -3,14 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>⚓...🐈</title>
+    <title>⚓.🪟.🐈</title>
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <main>
-        <div class="neco-top-bar">
+        <div class="desktop-icons">
+            <div class="desktop-icon">
+                <img src="assets/icons/recycle_bin_empty.png">
+                <p>Recycle Bin</p>
+            </div>
+
+            <div class="desktop-icon">
+                <img src="assets/icons/notepad.png">
+                <p>About Me.TXT</p>
+            </div>
+            
+            <div class="desktop-icon">
+                <img src="assets/icons/notepad.png">
+                <p>Things I Dislike.TXT</p>
+            </div>
+
+            <div class="desktop-icon">
+                <img src="assets/icons/html-page.png">
+                <p>:3.neco-arc.com</p>
+            </div>
+
+            <div class="desktop-icon">
+                <img src="assets/icons/381260763_328613926501346_1318991185050375775_n_small.jpg">
+                <p>ok now type.JPG</p>
+            </div>
+            
+            <div class="desktop-icon">
+                <img src="assets/icons/MIRC.png">
+                <p>mIRC.EXE</p>
+            </div>
+
+            <div class="desktop-icon">
+                <img src="assets/icons/github.png">
+                <p>My Github</p>
+            </div>
+        </div>
+
+        <div class="start-menu" style="display: none;">
+            <div class="side-label-div">
+                <h2 class="side-label">Windows<span>95</span></h2>
+            </div>
+            <div class="start-menu-items">
+                <p> <img src="assets/icons/computer.png"> System Information</p>
+                <p> <img src="assets/icons/ms-paint.png"> Paint</p>
+                <p> <img src="assets/icons/img.png"> Imaging for Windows</p>
+                <p> <img src="assets/icons/mse.png"> Internet Explorer</p>
+                <p> <img src="assets/icons/ms_dos.png"> MS-DOS Prompt</p>
+                <hr style="border: none; border-top: 1px solid; border-bottom: 1px solid white;">
+                <p> <img src="assets/icons/shutdown.png"> Shut Down...</p>
+            </div>
+        </div>
+
+        <div class="task-bar">
+            <div class="task-bar-contents">
+                <div id="start-button-div" class="task-bar-clickable">
+                    <img class="start-button" draggable="false" height="20px" src="assets/start.png" alt="start button">
+                </div>
+
+                <div class="clock-div">
+                    <p id="clock-p"></p>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="neco-top-bar">
             <div
                 style="display: flex; align-items: center; justify-content: center;flex-direction: row-reverse;box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a; padding: 5px; background: #fff;">
                 <h1 id="jp-text"><~「ネコアルク」</h1>
@@ -28,14 +91,14 @@
                 <img draggable="false" src="assets/gifs/necochaos.gif" alt="neco" id="neco-img">
                 <h1 id="jp-text">「ネコアルク・カオス」~></h1>
             </div>
-        </div>
+        </div> -->
 
         <!-- sloppy separator -->
-        <div
+        <!-- <div
             style="display: block; padding: 2px;box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #a7a7a7, inset 2px 2px #0a0a0a; background: #fff;">
-        </div>
+        </div> -->
 
-        <div>
+        <!-- <div>
             <div style="display: flex; padding: 10px; gap: 20px;">
                 <div class="menu-item" id="about-me-menu-item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                     <img src="assets/icons/notepad.png" alt="notepad" draggable="false">
@@ -47,7 +110,7 @@
                 </div>
             </div>
         </div>
-    </main>
+    </main> -->
 
     <div id="about-me-popup-window" class="popup-window" style="width: 600px; display: none;">
         <div class="control-box">
@@ -82,7 +145,7 @@
             - <span style="font-size: 30px;">:3</span> <br>
         </p>
     </div>
-
+    <!-- 
     <div id="things-i-hate-popup-window" class="popup-window" style="width: 600px; display: none;">
         <div class="control-box">
             <div id="window-icon">
@@ -120,10 +183,11 @@
         </p>
     </div>
 
-    <script src="index.js" defer></script>
-
     <footer>
         <p style="color: #000; font-size: 12px;">Hint: Drag a window from its blue bar to move it around!</p>
-    </footer>
+    </footer> -->
+    <script src="taskbar.js" defer></script>
+    <script src="popups.js" defer></script>
+    <script src="desktop.js" defer></script>
 </body>
 </html>
