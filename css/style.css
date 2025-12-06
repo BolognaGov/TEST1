@@ -14,7 +14,7 @@
 }
 
 body {
-    font-family: "Tahoma", "Arial", sans-serif;
+    font-family: Tahoma, monospace, sans-serif;
     background-color: #048383;
     margin: 0;
     padding: 0;
@@ -32,11 +32,17 @@ body {
 
 .desktop-icon {
     text-align: center;
-    cursor: pointer;
+    cursor: url("../assets/cursors/pointer.cur"), pointer;
+}
+
+.desktop-icon:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 .desktop-icon p {
     color: white;
+    font-size: small;
 }
 
 .task-bar {
@@ -114,6 +120,7 @@ body {
 
 .start-menu .start-menu-items {
     grid-area: 1 / 2;
+    font-size: small;
 }
 
 .start-menu .start-menu-items p {
@@ -144,26 +151,13 @@ body {
 }
 
 /* ********************************************************************* */
+
 @font-face {
     font-family: Hina-Mincho-Regular;
     src: url("../assets/fonts/Hina-Mincho-Regular.ttf");
     font-weight: normal;
     font-style: normal;
 }
-
-/* * {
-    user-select: none;
-    image-rendering: pixelated;
-    cursor: url("../assets/cursors/default.cur"), default;
-} */
-
-/* body {
-    font-family: "Tahoma", "Arial", sans-serif;
-    background-color: #c0c0c0;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-} */
 
 /* .neco-top-bar {
     display: flex;
@@ -212,7 +206,6 @@ body {
     align-items: center;
     background-color: #000080;
     padding: 2px 4px;
-    height: 18px;
     cursor: url("../assets/cursors/grab.cur"), grab;
 }
 
@@ -250,15 +243,6 @@ body {
     display: inline;
     font-size: 20px;
     margin: 0 5px;
-} */
-
-/* footer {
-    position: fixed;
-    bottom: 0px;
-    left: 0px;
-    color: #fff;
-    text-align: center;
-    width: 100%;
 } */
 
 /* @media (min-width: 990px) {

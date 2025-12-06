@@ -11,38 +11,38 @@
 <body>
     <main>
         <div class="desktop-icons">
-            <div class="desktop-icon">
-                <img src="assets/icons/recycle_bin_empty.png">
+            <div class="desktop-icon" id="recycle-bin">
+                <img draggable="false" src="assets/icons/recycle_bin_empty.png">
                 <p>Recycle Bin</p>
             </div>
 
-            <div class="desktop-icon">
-                <img src="assets/icons/notepad.png">
+            <div class="desktop-icon" id="about-me">
+                <img draggable="false" src="assets/icons/notepad.png">
                 <p>About Me.TXT</p>
             </div>
             
-            <div class="desktop-icon">
-                <img src="assets/icons/notepad.png">
+            <div class="desktop-icon" id="tidl">
+                <img draggable="false" src="assets/icons/notepad.png">
                 <p>Things I Dislike.TXT</p>
             </div>
 
-            <div class="desktop-icon">
-                <img src="assets/icons/html-page.png">
-                <p>:3.neco-arc.com</p>
+            <div class="desktop-icon" id="/:3">
+                <img draggable="false" src="assets/icons/html-page.png">
+                <p>www.neco-arc.com/:3.html</p>
             </div>
 
-            <div class="desktop-icon">
-                <img src="assets/icons/381260763_328613926501346_1318991185050375775_n_small.jpg">
-                <p>ok now type.JPG</p>
+            <div class="desktop-icon" id="PIC0001">
+                <img draggable="false" src="assets/icons/381260763_328613926501346_1318991185050375775_n_small.jpg">
+                <p>PIC0001.BMP</p>
             </div>
             
-            <div class="desktop-icon">
-                <img src="assets/icons/MIRC.png">
+            <div class="desktop-icon" id="mirc">
+                <img draggable="false" src="assets/icons/MIRC.png">
                 <p>mIRC.EXE</p>
             </div>
 
-            <div class="desktop-icon">
-                <img src="assets/icons/github.png">
+            <div class="desktop-icon" id="my-github">
+                <img style="border-radius: 50%;" draggable="false" src="assets/icons/github.png">
                 <p>My Github</p>
             </div>
         </div>
@@ -52,11 +52,11 @@
                 <h2 class="side-label">Windows<span>95</span></h2>
             </div>
             <div class="start-menu-items">
-                <p> <img src="assets/icons/computer.png"> System Information</p>
-                <p> <img src="assets/icons/ms-paint.png"> Paint</p>
-                <p> <img src="assets/icons/img.png"> Imaging for Windows</p>
-                <p> <img src="assets/icons/mse.png"> Internet Explorer</p>
-                <p> <img src="assets/icons/ms_dos.png"> MS-DOS Prompt</p>
+                <p> <img draggable="false" src="assets/icons/computer.png"> System Information</p>
+                <p> <img draggable="false" src="assets/icons/ms-paint.png"> Paint</p>
+                <p> <img draggable="false" src="assets/icons/img.png"> Imaging for Windows</p>
+                <p> <img draggable="false" src="assets/icons/mse.png"> Internet Explorer</p>
+                <p> <img draggable="false" src="assets/icons/ms_dos.png"> MS-DOS Prompt</p>
                 <hr style="border: none; border-top: 1px solid; border-bottom: 1px solid white;">
                 <p> <img src="assets/icons/shutdown.png"> Shut Down...</p>
             </div>
@@ -65,7 +65,7 @@
         <div class="task-bar">
             <div class="task-bar-contents">
                 <div id="start-button-div" class="task-bar-clickable">
-                    <img class="start-button" draggable="false" height="20px" src="assets/start.png" alt="start button">
+                    <img class="start-button" draggable="false" height="20px" src="assets/icons/start.png" alt="start button">
                 </div>
 
                 <div class="clock-div">
@@ -104,9 +104,9 @@
                     <img src="assets/icons/notepad.png" alt="notepad" draggable="false">
                     <span style="margin: 6px;">About Me.TXT</span>
                 </div>
-                <div class="menu-item" id="things-i-hate-menu-item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="menu-item" id="things-i-dislike-menu-item" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
                     <img src="assets/icons/notepad.png" alt="notepad" draggable="false">
-                    <span style="margin: 6px;">Things I Hate.TXT</span>
+                    <span style="margin: 6px;">Things I dislike.TXT</span>
                 </div>
             </div>
         </div>
@@ -138,21 +138,21 @@
             - 21 year old <br>
             - Male <br>
             - Straight <br>
-            - Hobbyist <strike>programmer</strike> (procrastinative..) <br>
+            - Hobbyist <strike>programmer</strike> (procrastinator..) <br>
             - I speak English and Arabic <br>
             - I like Windows especially the classic versions <br>
             - I like the funni cat (in case you didn't realize) <br>
             - <span style="font-size: 30px;">:3</span> <br>
         </p>
     </div>
-    <!-- 
-    <div id="things-i-hate-popup-window" class="popup-window" style="width: 600px; display: none;">
+
+    <div id="things-i-dislike-popup-window" class="popup-window" style="width: 600px; display: none;">
         <div class="control-box">
             <div id="window-icon">
                 <img height="16px" src="assets/titlebar/notepad.png" alt="document">
             </div>
             <div id="window-title">
-                <p style="cursor: url('assets/cursors/grab.cur'), grab;">Things I Hate.TXT</p>
+                <p style="cursor: url('assets/cursors/grab.cur'), grab;">Things I Dislike.TXT</p>
             </div>
             <div id="control-buttons">
                 <button type="button" class="btn-close">
@@ -183,9 +183,30 @@
         </p>
     </div>
 
-    <footer>
-        <p style="color: #000; font-size: 12px;">Hint: Drag a window from its blue bar to move it around!</p>
-    </footer> -->
+    <div id="PIC0001-popup-window" class="popup-window" style="width: 512px; display: none;">
+        <div class="control-box">
+            <div id="window-icon">
+                <img height="16px" src="assets/titlebar/img.png" alt="image">
+            </div>
+            <div id="window-title">
+                <p style="cursor: url('assets/cursors/grab.cur'), grab;">PIC0001.BMP</p>
+            </div>
+            <div id="control-buttons">
+                <button type="button" class="btn-close">
+                    <img draggable="false" width="16px" src="assets/titlebar/exit.png" alt="exit">
+                </button>
+                <button type="button" class="btn-maximize">
+                    <img draggable="false" width="16px" src="assets/titlebar/maximize.png" alt="maximize">
+                </button>
+                <button type="button" class="btn-minimize">
+                    <img draggable="false" width="16px" src="assets/titlebar/minimize.png" alt="minimize">
+                </button>
+            </div>
+        </div>
+        <a target="_blank" style="position: fixed; top: 1; left: 1; font-size: smaller; padding: 5px;" href="https://www.instagram.com/t0mokinnie/">Art By t0mokinnie</a>
+        <img draggable="false" src="assets/images/381260763_328613926501346_1318991185050375775_n.jpg" alt=":3 :3 :3 :3" style="width: 100%; height: 100%;">
+    </div>
+
     <script src="taskbar.js" defer></script>
     <script src="popups.js" defer></script>
     <script src="desktop.js" defer></script>
